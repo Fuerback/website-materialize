@@ -32,13 +32,7 @@ body {
 .form-signin .form-cadastrar {
   padding: 25px;
 }
-.form-signin .form-buttons {
-  width: 100%;
-  padding-top: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 0px;
-}
+
 .form-signin .button-login {
   padding-top: 15px;
 }
@@ -60,13 +54,16 @@ body {
 .form-signin .form-cadastrar .custom-control {
   text-align: left;
 }
-.form-signin .form-buttons #esqueci {
-  color: black;
-  font-weight: 500;
-}
-.form-signin .form-buttons #cadastrar {
+.cadastrar-button #cadastrar{
   color: #2687e9;
   font-weight: 500;
+  text-align: right;
+  margin-left: 50px;
+}
+.esqueci-button #esqueci {
+  color: black;
+  font-weight: 500;
+  margin-left: 40px;
 }
 .form-redefinir .redefinir-informacao {
   font-size: 18px;
