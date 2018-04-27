@@ -25,6 +25,12 @@ dashboardModulo.controller('dashboardController', function ($scope){
   $scope.fechaModal = function() {
     $('.modal').modal().close();
   }
+
+  $scope.copiarCodigoEmpresa = function() {
+    //var codigoEmpresa = document.getElementById("codigoEmpresa");
+    //pegar texto do botao e copiar pro clipboard
+    M.toast({html: 'Código da empresa copiado!', classes: 'rounded'});
+  }
 })
 
 $(document).ready(function(){
