@@ -55,65 +55,26 @@
                     <span></span>
                   </label>
                 </th>
-                <th scope="col">Reembolso</th>
-                <th scope="col">Status</th>
-                <th scope="col" class="right-align">Valor</th>
-                <th scope="col" class="right-align">Categoria</th>
-                <th scope="col" class="right-align">Usuário</th>
+                <th>Reembolso</th>
+                <th>Status</th>
+                <th>Valor</th>
+                <th>Categoria</th>
+                <th>Usuário</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr ng-repeat="gastosUsuarioTabela in gastosUsuario">
                 <td>
                   <label>
                     <input type="checkbox" class="filled-in" />
                     <span></span>
                   </label>
                 </td>
-                <td>Visita</td>
-                <td><img src="images/approved.svg" class="approved"></td>
-                <td class="right-align">R$ 312,00</td>
-                <td class="right-align">Outros</td>
-                <td class="right-align">Felipe Cesar</td>
-              </tr>
-              <tr>
-                <td>
-                  <label>
-                    <input type="checkbox" class="filled-in" checked="checked" />
-                    <span></span>
-                  </label>
-                </td>
-                <td>Almoço</td>
-                <td><img src="images/canceled.svg" class="canceled"></td>
-                <td class="right-align">R$ 23,00</td>
-                <td class="right-align">Alimentação</td>
-                <td class="right-align">Willian</td>
-              </tr>
-              <tr>
-                <td>
-                  <label>
-                    <input type="checkbox" class="filled-in" />
-                    <span></span>
-                  </label>
-                </td>
-                <td>Hotel</td>
-                <td><img src="images/waiting.svg" class="waiting"></td>
-                <td class="right-align">R$ 200,00</td>
-                <td class="right-align">Hospedagem</td>
-                <td class="right-align">Kauan</td>
-              </tr>
-              <tr>
-                <td>
-                  <label>
-                    <input type="checkbox" class="filled-in" checked="checked" />
-                    <span></span>
-                  </label>
-                </td>
-                <td>Uber</td>
-                <td><img src="images/waiting.svg" class="waiting"></td>
-                <td class="right-align">R$ 41,30</td>
-                <td class="right-align">Transporte</td>
-                <td class="right-align">Bruno</td>
+                <td>{{gastosUsuarioTabela.descricao}}</td>
+                <td><img src="images/{{gastosUsuarioTabela.status}}.svg" class="{{gastosUsuarioTabela.status}}"></td>
+                <td>{{gastosUsuarioTabela.valor}}</td>
+                <td>{{gastosUsuarioTabela.categoria}}</td>
+                <td>{{gastosUsuarioTabela.usuario}}</td>
               </tr>
             </tbody>
           </table>

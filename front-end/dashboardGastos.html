@@ -45,25 +45,10 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Felipe</td>
-                  <td>R$ 312,00</td>
-                  <td>fuerback@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Kauan</td>
-                  <td>R$ 223,00</td>
-                  <td>kauan@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Willian</td>
-                  <td>R$ 200,00</td>
-                  <td>wiliian@gmail.com</td>
-                </tr>
-                <tr>
-                  <td>Bruno</td>
-                  <td>R$ 441,30</td>
-                  <td>bruno@gmail.com</td>
+                <tr ng-repeat="gastosTotalUsuarioTabela in gastosTotalUsuario">
+                  <td>{{gastosTotalUsuarioTabela.usuario}}</td>
+                  <td>{{gastosTotalUsuarioTabela.valor}}</td>
+                  <td>{{gastosTotalUsuarioTabela.email}}</td>
                 </tr>
               </tbody>
             </table>
