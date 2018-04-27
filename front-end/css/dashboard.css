@@ -9,7 +9,7 @@ main {
   -ms-flex-align: center;
   align-items: center;
   padding-bottom: 40px;
-  padding-top: 200px;
+  padding-top: 70px;
 }
 .form-signin {
   width: 100%;
@@ -20,9 +20,27 @@ main {
   border-radius: 5px;
   background: white;
 }
-.group-buttons {
+.div-user-table {
   width: 100%;
-  max-width: 550px;
+  max-width: 60%;
+  padding: 0px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 1px grey;
+  border-radius: 5px;
+  background: white;
+}
+.div-admin-table {
+  width: 100%;
+  max-width: 75%;
+  padding: 0px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 1px grey;
+  border-radius: 5px;
+  background: white;
+}
+.admin-group-buttons {
+  width: 100%;
+  max-width: 75%;
   padding-left: 0px;
   padding-bottom: 15px;
   margin: auto;
@@ -117,6 +135,50 @@ main {
   line-height: normal;
   letter-spacing: 0.5px;
   color: #2687e9;
+}
+.aprovar-button {
+  background-color: #00d9b8;
+  margin-right: 20px;
+}
+.aprovar-button:focus {
+  background-color: #00d9b8; 
+}
+.aprovar-button:hover {
+  background-color: #00d9b8; 
+}
+.recusar-button {
+  background-color: #f03f61;
+}
+.recusar-button:focus {
+  background-color: #f03f61; 
+}
+.recusar-button:hover {
+  background-color: #f03f61; 
+}
+.copiar-button {
+  background-color: #fff;
+  margin-right: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+.copiar-button:focus {
+  background-color: #fff; 
+}
+.copiar-button:hover {
+  background-color: #fff; 
+}
+.right-align {
+  text-align: right;
+}
+.copy-button {
+  display:inline-block;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  vertical-align:middle;
+  padding-right: 10px;
 }
 
 /*!
