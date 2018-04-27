@@ -20,6 +20,26 @@ main {
   border-radius: 5px;
   background: white;
 }
+.form-redefinir {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+}
+.button-redefinir {
+  padding-top: 15px;
+  width: 163px;
+}
+#atualizar {
+  color: #2687e9;
+  font-weight: 500;
+}
+.div-atualizar {
+  margin-right: 30px;
+  right: 0px;
+  padding: 10px;
+  text-align: right;
+}
 .div-user-table {
   width: 100%;
   max-width: 60%;
