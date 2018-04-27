@@ -11,6 +11,9 @@ main {
   padding-bottom: 40px;
   padding-top: 70px;
 }
+.table {
+  table-layout : fixed;
+}
 .form-signin {
   width: 100%;
   max-width: 550px;
@@ -20,7 +23,7 @@ main {
   border-radius: 5px;
   background: white;
 }
-.grafico {
+.grafico-area {
   width: 100%;
   max-width: 900px;
   min-width: 500px;
@@ -30,7 +33,18 @@ main {
   border-radius: 5px;
   background: white;
 }
-.titulo-grafico {
+.gastos-area {
+  width: 100%;
+  max-width: 900px;
+  min-width: 500px;
+  padding: 15px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 1px grey;
+  border-radius: 5px;
+  background: white;
+  margin-top: 20px;
+}
+.titulo-gastos {
   font-size: 25px;
   color: #000000;
   font-weight: 500;
